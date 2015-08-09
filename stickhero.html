@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>英雄难过棍子关</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="gamestart" class="gamepage">
+		<p class="gametips">
+			游戏规则：长按手机屏幕（或长按鼠标左键），根据按压时间生成不同长度的桥梁，松手则开始过桥。
+			<button id="startgame"></button>
+		</p>
+	</div>
+	<div id="gameContainer" class="gamepage">
+		<div id="gameLevel">
+			Level
+			<span id="level">1</span>
+		</div>
+		<div class="scorebar score">0</div>
+		<div id="player" class="gameDom"></div>
+		<div id="stick" class="gameDom"></div>
+		<ul id="pillarGroup">
+			<li class="pillar pillar1"></li>
+		</ul>
+	</div>
+	<div id="gameover" class="gamepage">
+		<p class="animated bounceInDown">游戏结束 TAT</p>
+		<p id="scoring" class="animated bounceInLeft">
+			得分：
+			<span class="score">0</span>
+		</p>
+		<p class="animated zoomIn">
+			<button id="moregame">再来一局</button>
+		</p>
+		<p class="animated rubberBand">created by yinshawn Rao</p>
+	</div>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/zepto.touch.js"></script>
+	<script src="js/stickhero.js"></script>
+</body>
+</html>
